@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "title": "Item A",
+      "body": "Description A",
+      "color": "red"
+    },
+    {
+      "title": "Item B",
+      "body": "Description B",
+      "color": "green"
+    },
+    {
+      "title": "Item C",
+      "body": "Description C",
+      "color": "blue"
+    },
+    {
+      "title": "Item D",
+      "body": "Description D",
+      "color": "yellow"
+    },
+    {
+      "title": "Item E",
+      "body": "Description E",
+      "color": "purple"
+    }
+  ]
+}
