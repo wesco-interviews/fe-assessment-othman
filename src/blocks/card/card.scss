@@ -1,4 +1,27 @@
 .card {
   max-width: 32rem;
   background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  img {
+    width: 100%;
+  }
+  h1, p {
+    color: gray;
+    font-family: 'circular';
+  }
+  h1 {
+    margin-bottom: 5px;
+  }
+  a {
+    font-family: 'circular';
+    display: block;
+    height: 38px;
+    background-color: #002d49;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: 37px;
+  }
 }

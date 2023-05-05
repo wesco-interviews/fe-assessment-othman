@@ -22,11 +22,31 @@ import '../card/card.scss';
 function decorate({title, body, image, button}: Card) {
     const app = document.getElementById("app");
     const parent = document.createElement("div");
+    const cardImage = document.createElement('img');
     const h1 = document.createElement("h1");
+    const p = document.createElement("p");
+    const buttonLink = document.createElement('a');
 
+    if(!image) return ''; // we can replace with default image or placeholder image.
+    if(!button) return '';
+
+    cardImage.src= image?.src;
+    cardImage.alt= image?.alt;
+    cardImage.id = "card-image";
+    parent.append(cardImage);
     // title example, we want this to read in from the props
-    h1.textContent = "Card Title";
+    h1.textContent = title;
+    h1.id= "card-title";
     parent.append(h1);
+
+    p.textContent= body;
+    p.id= "card-body";
+    parent.append(p);
+
+    buttonLink.href= button?.href;
+    buttonLink.id= "card-link";
+    buttonLink.textContent= button?.label;
+    parent.append(buttonLink);
 
     parent.classList.add("card");
 
