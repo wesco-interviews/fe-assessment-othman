@@ -1,1 +1,29 @@
-.grid {}
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  @media screen and (max-width: 767px) {
+    flex-flow: column;
+  }
+  .grid-item {
+    text-align: center;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+    h1 {
+      font-size: 18px;
+      font-family: 'circular';
+      color: white;
+    }
+    p {
+      font-size: 12px;
+      font-family: 'circular';
+      color: white;
+    }
+  }
+}
